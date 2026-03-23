@@ -1,0 +1,15 @@
+# Virtual Environment
+ariseX/
+
+
+# python cache
+__python__/
+*.pyc
+*.pyo
+
+# VS code
+.vscode/
+
+# Environment variables
+*.env
+.env

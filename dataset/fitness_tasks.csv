@@ -1,0 +1,151 @@
+task_name,category,subcategory,difficulty,task_type,avg_time_mins,min_time,max_time,min_time_per_unit,max_time_per_unit,amount_unit,default_amount,min_amount,max_amount,interest
+Morning Walk,Fitness,Cardio,1,flexible,30,,,6,20,mins,30,10,120,
+Running,Fitness,Cardio,5,flexible,30,,,3,12,km,5,1,42,
+Jump Rope,Fitness,Cardio,6,timed,10,2,30,,,,,,,
+Cycling,Fitness,Cardio,4,flexible,30,,,2,6,km,15,3,100,
+Swimming Laps,Fitness,Cardio,6,flexible,30,,,0.4,2,laps,20,2,100,
+Stair Climbing,Fitness,Cardio,6,timed,15,3,45,,,,,,,
+Rowing Machine,Fitness,Cardio,5,timed,20,5,60,,,,,,,
+Elliptical Machine,Fitness,Cardio,3,timed,30,5,60,,,,,,,
+Push-Ups,Fitness,Strength,4,reps,15,,,,,reps,30,1,200,
+Pull-Ups,Fitness,Strength,7,reps,15,,,,,reps,10,1,50,
+Squats,Fitness,Strength,5,reps,20,,,,,reps,30,5,200,
+Deadlift,Fitness,Strength,8,reps,45,,,,,reps,15,1,30,
+Bench Press,Fitness,Strength,7,reps,45,,,,,reps,20,1,60,
+Lunges,Fitness,Strength,4,reps,20,,,,,reps,20,5,100,
+Plank Hold,Fitness,Strength,5,reps,10,,,,,seconds,60,5,600,
+Dumbbell Workout,Fitness,Strength,6,timed,40,10,90,,,,,,,
+Morning Yoga,Fitness,Flexibility,3,timed,20,5,75,,,,,,,
+Full Body Stretch,Fitness,Flexibility,2,timed,15,5,45,,,,,,,
+Pilates,Fitness,Flexibility,4,timed,30,10,75,,,,,,,
+Foam Rolling,Fitness,Flexibility,2,timed,15,5,35,,,,,,,
+Hip Flexor and Hamstring Stretch,Fitness,Flexibility,2,timed,10,3,30,,,,,,,
+Mobility Routine,Fitness,Flexibility,4,timed,30,5,60,,,,,,,
+Advanced Yoga Flow,Fitness,Flexibility,7,timed,45,15,90,,,,,,,
+Cold Shower,Fitness,Recovery,6,timed,5,1,15,,,,,,,
+Rest Day Light Walk,Fitness,Recovery,1,timed,20,5,60,,,,,,,
+Sleep 8 Hours,Fitness,Recovery,5,daily_habit,1440,,,,,,,,,
+Deep Breathing Exercise,Fitness,Recovery,2,timed,10,2,30,,,,,,,
+Light Recovery Yoga,Fitness,Recovery,2,timed,20,5,45,,,,,,,
+Epsom Salt Bath,Fitness,Recovery,1,timed,25,10,60,,,,,,,
+Self Massage Foam Roller,Fitness,Recovery,2,timed,15,5,35,,,,,,,
+Full Body Gym Session,Fitness,Strength,7,timed,60,20,120,,,,,,,Gym / Weightlifting
+Heavy Squat Session 5x5,Fitness,Strength,8,reps,50,,,,,reps,25,5,40,Gym / Weightlifting
+Deadlift PR Attempt,Fitness,Strength,9,reps,45,,,,,reps,5,1,10,Gym / Weightlifting
+Upper Body Push Day,Fitness,Strength,7,timed,55,20,120,,,,,,,Gym / Weightlifting
+Upper Body Pull Day,Fitness,Strength,7,timed,55,20,120,,,,,,,Gym / Weightlifting
+Leg Day Full Session,Fitness,Strength,8,timed,60,20,120,,,,,,,Gym / Weightlifting
+Arm Accessory Workout,Fitness,Strength,5,timed,30,10,75,,,,,,,Gym / Weightlifting
+Progressive Overload a Lift,Fitness,Strength,7,reps,40,,,,,reps,20,3,40,Gym / Weightlifting
+Track All Lifts in Log,Fitness,Strength,2,completion,10,,,,,,,,,Gym / Weightlifting
+Deload Week Light Session,Fitness,Strength,3,timed,40,15,75,,,,,,,Gym / Weightlifting
+Easy Recovery Run,Fitness,Cardio,3,flexible,20,,,4,12,km,3,1,15,Running
+Tempo Run,Fitness,Cardio,6,flexible,28,,,3,8,km,5,2,20,Running
+Long Distance Run,Fitness,Cardio,7,flexible,60,,,3,10,km,10,5,42,Running
+Sprint Interval Session,Fitness,Cardio,8,timed,20,5,45,,,,,,,Running
+Hill Running Session,Fitness,Cardio,8,timed,30,5,60,,,,,,,Running
+5km Personal Best Attempt,Fitness,Cardio,9,flexible,25,,,3,8,km,5,5,5,Running
+Easy Morning Jog,Fitness,Cardio,3,flexible,20,,,4,12,km,3,1,10,Running
+Fartlek Training,Fitness,Cardio,7,timed,30,10,75,,,,,,,Running
+Track Running Distance,Fitness,Cardio,1,completion,5,,,,,,,,,Running
+Post Run Stretch,Fitness,Recovery,2,timed,10,3,30,,,,,,,Running
+Beginner Yoga Flow,Fitness,Flexibility,2,timed,20,5,60,,,,,,,Yoga
+Intermediate Yoga Flow,Fitness,Flexibility,5,timed,40,10,90,,,,,,,Yoga
+Advanced Power Yoga,Fitness,Flexibility,8,timed,60,15,120,,,,,,,Yoga
+Warrior Pose Sequence,Fitness,Flexibility,5,timed,15,3,45,,,,,,,Yoga
+Practice Headstand,Fitness,Flexibility,9,timed,20,3,60,,,,,,,Yoga
+Morning Sun Salutation,Fitness,Flexibility,4,reps,15,,,,,rounds,10,3,50,Yoga
+Yin Yoga Deep Stretch,Fitness,Flexibility,4,timed,30,10,75,,,,,,,Yoga
+Yoga Nidra Relaxation,Fitness,Recovery,2,timed,20,5,45,,,,,,,Yoga
+Pranayama Breathing,Fitness,Flexibility,3,timed,10,3,30,,,,,,,Yoga
+30 Day Yoga Challenge Day,Fitness,Flexibility,5,timed,25,5,75,,,,,,,Yoga
+Swim Freestyle,Fitness,Cardio,5,flexible,20,,,0.4,2,laps,20,2,100,Swimming
+Swim 1km Continuous,Fitness,Cardio,7,flexible,35,,,0.4,2,laps,40,10,120,Swimming
+Freestyle Technique Drills,Fitness,Cardio,5,timed,25,5,60,,,,,,,Swimming
+Sprint Swim Intervals,Fitness,Cardio,8,reps,25,,,,,reps,10,3,30,Swimming
+Learn Breaststroke,Fitness,Cardio,5,timed,30,10,75,,,,,,,Swimming
+Practice Backstroke,Fitness,Cardio,4,flexible,20,,,0.4,2,laps,10,2,60,Swimming
+Open Water Swim,Fitness,Cardio,8,timed,30,10,90,,,,,,,Swimming
+200m Personal Best Swim,Fitness,Cardio,8,reps,15,,,,,laps,8,8,8,Swimming
+Dry Land Swim Training,Fitness,Strength,5,timed,25,5,60,,,,,,,Swimming
+Cool Down Slow Swim,Fitness,Recovery,1,flexible,10,,,0.5,3,laps,5,2,20,Swimming
+Easy Outdoor Cycle,Fitness,Cardio,4,flexible,45,,,2,6,km,15,3,100,Cycling
+Interval Cycling Session,Fitness,Cardio,7,timed,30,10,75,,,,,,,Cycling
+Long Distance Ride,Fitness,Cardio,8,flexible,90,,,2,5,km,40,20,200,Cycling
+Hill Climb Cycling,Fitness,Cardio,8,timed,40,10,90,,,,,,,Cycling
+Indoor Spin Class,Fitness,Cardio,7,timed,45,20,75,,,,,,,Cycling
+Cycling Tempo Effort,Fitness,Cardio,6,flexible,30,,,2,5,km,15,5,60,Cycling
+Recovery Easy Cycle,Fitness,Recovery,2,flexible,20,,,3,7,km,10,3,30,Cycling
+Track Cycling Distance,Fitness,Cardio,1,completion,5,,,,,,,,,Cycling
+Cycle Commute,Fitness,Cardio,4,flexible,30,,,2,6,km,5,1,30,Cycling
+Bike Maintenance Check,Fitness,Recovery,2,completion,20,,,,,,,,,Cycling
+20 Minute Full Body HIIT,Fitness,Cardio,8,timed,20,5,35,,,,,,,HIIT
+Tabata Protocol 4 Rounds,Fitness,Cardio,9,timed,20,16,25,,,,,,,HIIT
+30 Minute HIIT Cardio,Fitness,Cardio,8,timed,30,10,50,,,,,,,HIIT
+HIIT Lower Body Blast,Fitness,Cardio,8,timed,20,5,35,,,,,,,HIIT
+HIIT Upper Body,Fitness,Cardio,7,timed,20,5,35,,,,,,,HIIT
+Sprint Interval Run 8 Rounds,Fitness,Cardio,8,timed,20,5,35,,,,,,,HIIT
+Beginner HIIT 15 Minutes,Fitness,Cardio,5,timed,15,5,30,,,,,,,HIIT
+HIIT Jump Rope Circuit,Fitness,Cardio,8,timed,15,5,30,,,,,,,HIIT
+Record HIIT Completion,Fitness,Cardio,1,completion,5,,,,,,,,,HIIT
+Cool Down After HIIT,Fitness,Recovery,2,timed,10,3,25,,,,,,,HIIT
+Shadow Boxing,Fitness,Cardio,5,timed,15,3,45,,,,,,,Martial Arts
+Heavy Bag Workout,Fitness,Strength,7,timed,20,5,45,,,,,,,Martial Arts
+Practice Kick Combinations,Fitness,Flexibility,5,reps,20,,,,,reps,50,10,200,Martial Arts
+Spar for 3 Rounds,Fitness,Cardio,9,timed,15,9,30,,,,,,,Martial Arts
+Drill a Specific Technique,Fitness,Strength,5,reps,20,,,,,reps,20,5,100,Martial Arts
+Watch and Analyze a Fight,Fitness,Cardio,3,timed,25,5,60,,,,,,,Martial Arts
+Strength and Conditioning,Fitness,Strength,7,timed,35,10,75,,,,,,,Martial Arts
+Practice Footwork Drills,Fitness,Cardio,5,timed,15,3,45,,,,,,,Martial Arts
+Attend a Martial Arts Class,Fitness,Strength,7,timed,60,30,120,,,,,,,Martial Arts
+Stretch for Kicking Flexibility,Fitness,Flexibility,4,timed,20,5,45,,,,,,,Martial Arts
+Push-Up Progressions,Fitness,Strength,5,reps,20,,,,,reps,30,5,100,Calisthenics
+Pull-Up Progressions,Fitness,Strength,7,reps,20,,,,,reps,15,1,50,Calisthenics
+Work Toward a Muscle-Up,Fitness,Strength,9,reps,25,,,,,reps,5,1,20,Calisthenics
+L-Sit Hold Practice,Fitness,Strength,8,reps,15,,,,,seconds,30,3,120,Calisthenics
+Handstand Practice,Fitness,Strength,8,timed,15,3,45,,,,,,,Calisthenics
+Full Calisthenics Routine,Fitness,Strength,7,timed,40,10,90,,,,,,,Calisthenics
+Pistol Squat Progressions,Fitness,Strength,7,reps,20,,,,,reps,10,1,30,Calisthenics
+Dip and Tricep Work,Fitness,Strength,5,reps,20,,,,,reps,20,3,100,Calisthenics
+Core Abs Calisthenics,Fitness,Strength,6,timed,20,5,45,,,,,,,Calisthenics
+Planche Lean Practice,Fitness,Strength,9,reps,15,,,,,seconds,20,3,60,Calisthenics
+Climb Easy Routes at Gym,Fitness,Strength,5,flexible,40,,,5,20,routes,5,1,15,Rock Climbing
+Project a Hard Boulder Problem,Fitness,Strength,8,timed,45,10,120,,,,,,,Rock Climbing
+Top Rope Climbing Session,Fitness,Strength,6,timed,60,20,120,,,,,,,Rock Climbing
+Hangboard Finger Training,Fitness,Strength,8,timed,20,5,45,,,,,,,Rock Climbing
+Footwork Drills on Easy Routes,Fitness,Strength,4,timed,30,10,75,,,,,,,Rock Climbing
+Outdoor Rock Climbing Session,Fitness,Strength,8,timed,180,60,480,,,,,,,Rock Climbing
+Core Strength for Climbing,Fitness,Strength,6,timed,25,5,60,,,,,,,Rock Climbing
+Watch Climbing Beta Videos,Fitness,Strength,2,timed,20,5,60,,,,,,,Rock Climbing
+Antagonist Muscle Training,Fitness,Strength,5,timed,25,5,60,,,,,,,Rock Climbing
+Stretch Forearms and Shoulders,Fitness,Recovery,2,timed,10,3,30,,,,,,,Rock Climbing
+Learn a New Dance Routine,Fitness,Cardio,5,timed,20,5,60,,,,,,,Dance
+Practice an Existing Routine,Fitness,Cardio,4,timed,20,5,60,,,,,,,Dance
+Freestyle Dance Session,Fitness,Cardio,3,timed,15,3,45,,,,,,,Dance
+Attend a Dance Class,Fitness,Cardio,6,timed,60,30,120,,,,,,,Dance
+Learn Complex Choreography,Fitness,Cardio,7,timed,45,10,120,,,,,,,Dance
+Record and Review Your Dance,Fitness,Cardio,5,timed,20,5,60,,,,,,,Dance
+Stretch for Dance Flexibility,Fitness,Flexibility,3,timed,15,3,45,,,,,,,Dance
+Dance Cardio Workout,Fitness,Cardio,5,timed,30,10,60,,,,,,,Dance
+Practice a Specific Move,Fitness,Cardio,5,reps,15,,,,,reps,50,10,200,Dance
+Watch and Break Down a Dance,Fitness,Cardio,3,timed,20,5,60,,,,,,,Dance
+Practice Sport Specific Drills,Fitness,Cardio,5,timed,30,5,75,,,,,,,Sports
+Play a Full Match or Game,Fitness,Cardio,7,timed,90,30,180,,,,,,,Sports
+Sprint and Agility Drills,Fitness,Cardio,7,timed,20,5,45,,,,,,,Sports
+Practice Core Skill,Fitness,Strength,5,timed,30,5,75,,,,,,,Sports
+Watch and Analyze Pro Match,Fitness,Cardio,2,timed,60,20,150,,,,,,,Sports
+Conditioning Run for Sport,Fitness,Cardio,6,flexible,25,,,3,10,km,3,1,10,Sports
+Strength Training for Sport,Fitness,Strength,6,timed,40,10,90,,,,,,,Sports
+Practice with a Partner,Fitness,Cardio,6,timed,45,15,120,,,,,,,Sports
+Warm Up and Stretch for Sport,Fitness,Flexibility,2,timed,15,5,35,,,,,,,Sports
+Track Your Performance Stats,Fitness,Cardio,2,completion,10,,,,,,,,,Sports
+Short Easy Trail Hike,Fitness,Cardio,3,flexible,75,,,10,25,km,5,1,15,Hiking
+Moderate Hike,Fitness,Cardio,6,flexible,150,,,12,30,km,10,5,25,Hiking
+Summit a Local Mountain,Fitness,Cardio,8,flexible,240,,,15,40,km,15,8,30,Hiking
+Hike with a Heavy Backpack,Fitness,Strength,7,flexible,120,,,15,35,km,8,3,20,Hiking
+Night Hike,Fitness,Cardio,6,flexible,120,,,15,35,km,6,2,15,Hiking
+Practice Navigation on Trail,Fitness,Cardio,5,timed,90,20,240,,,,,,,Hiking
+Walk 10000 Steps,Fitness,Cardio,3,flexible,90,,,0.006,0.015,steps,10000,1000,30000,Hiking
+Stretch After a Hike,Fitness,Recovery,2,timed,15,3,35,,,,,,,Hiking
+Research and Plan Next Trail,Fitness,Cardio,2,timed,20,5,60,,,,,,,Hiking
+Build Leg Strength for Hiking,Fitness,Strength,5,timed,30,5,75,,,,,,,Hiking
