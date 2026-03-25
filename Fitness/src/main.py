@@ -1,4 +1,3 @@
-import csv
 import numpy as np
 import pandas as pd
 import questionary
@@ -11,6 +10,7 @@ def get_task_by_name(tasks,name):
         if task['task_name'] == name:
             return task
     return None
+
 
 def show_summary_task(selected_tasks):
     while True:
@@ -35,16 +35,57 @@ def show_summary_task(selected_tasks):
         
     return selected_tasks
 
+def set_task_target(task):
+    print("\n Set your target \n")
+    name = task['task_name']
+    task_type = task['task_type']
+    print(f"\n{name}")
+
+    if task_type == 'timed':
+        default = task['avg_time_mins']
+        user_input = input(f"How long? (deafult: {default} mins): ").strip()
+        task['target_time']=int(user_input) if user_input.isdigit() else int(default)
+    
+
+    elif task_type == 'reps':
+        default = task['default_amount']
+        user_input = input(f"How many reps ? (deafult: {default}): ").strip()
+        task['target_reps']=int(user_input) if user_input.isdigit() else int(default)
+
+    elif task_type == 'flexible':
+        unit = task['amount_unit']
+        default_time = task['avg_time_mins']
+        default_amount = task['default_amount']
+
+        choice = questionary.select(
+            f" Measured by: ",
+            choices = ["Time (mins)",f"Amount ({unit})"]
+        ).ask()
+
+        if choice == 'Time (mins)':
+            user_input = input(f"How long ? (deafult: {default_time} mins): ").strip()
+            task['target_type'] = 'time'
+            task['target_reps']=int(user_input) if user_input.isdigit() else int(default)
+        else:
+            user_input = input(f"How much ? (deafult: {default_amount}): ").strip()
+            task['target_type'] = 'amount'
+            task['target_amount']=float(user_input) if user_input else float(default)
+            task['target_unit'] = unit
+
+    elif task_type in ['completion','daily_habit']:
+        print("No need the target")
+
+    return task
+
 
 def main():
-    path = "/home/deepanshu/Documents/coding/python/AriseX/dataset/fitness_tasks.csv"
-    tasks = load_tasks(path)
+    tasks = load_tasks()
     task_names= [row['task_name'] for row in tasks]
     selected_tasks = []
 
     print("\n==== Fitness Task =====\n")
 
-    top_10_tasks(path)
+    top_10_tasks()
     
     while(True):
         
@@ -68,6 +109,7 @@ def main():
                 continue
             task = get_task_by_name(tasks, selected_name)
             selected_tasks.append(task)
+            task = set_task_target(task)
             print(f"\n Added: {selected_name}\n")
 
         
@@ -82,6 +124,7 @@ def main():
                 ).ask()
                 if confirm:
                     selected_tasks.append(similar)
+                    task = set_task_target(similar)
                     print(f" Added: {similar['task_name']}")
             else:
                 print("NO similar task found.")

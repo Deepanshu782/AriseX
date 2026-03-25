@@ -1,14 +1,19 @@
 import pandas as pd
+import os
 import random
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
-def load_tasks(csv_file):
-    df = pd.read_csv(csv_file)
+
+Base_dir = os.path.dirname(os.path.abspath(__file__))
+csv_path = os.path.join(Base_dir,"..","..","dataset","fitness_tasks.csv")
+
+def load_tasks():
+    df = pd.read_csv(csv_path)
     tasks = df.to_dict('records')
     return tasks
 
-def top_10_tasks(csv_file):
-    task = load_tasks(csv_file)
+def top_10_tasks():
+    task = load_tasks()
     lottery = random.sample(task,10)
     for i,item in enumerate(lottery):
         print(f"{i+1}. {item['task_name']}")
