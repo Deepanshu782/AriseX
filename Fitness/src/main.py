@@ -16,7 +16,7 @@ def show_summary_task(selected_tasks):
     while True:
         print("\n ==== SELECTED TASKS ==== \n")
         for i,task in enumerate(selected_tasks):
-            print(f"{i+1}. {task['task_name']} | {task['task_type']} | {task['difficulty']}")
+            print(f"{i+1}. {task['task_name']}")
                 
         if not questionary.confirm("Do you want to delete any task?").ask():
             break
@@ -72,12 +72,93 @@ def set_task_target(task):
             task['target_amount']=float(user_input) if user_input else float(default)
             task['target_unit'] = unit
 
-    elif task_type in ['completion','daily_habit']:
+    elif task_type == 'daily_habit':
         print("No need the target")
 
     return task
 
+def completion_flow(selected_task):
+    print(" === Complete Your tasks ===\n")
+    
+    for task in selected_task:
+        name = task['task_name']
+        task_type = task['task_type']
 
+        print(f"\n {name}")
+        # show target set earlier
+        if task_type == 'timed':
+            print(f"Target:{task['target_time']} mins ")
+        elif task_type == 'reps':
+            print(f"Target:{task['target_reps']} reps")
+        elif task_type == 'flexible':
+            if task['target_type'] == 'time':
+                print(f"Target:{task['target_time']} mins")
+            else:
+                print(f"Target:{task['target_amount']} {task['target_unit']}")
+        elif task_type ==' daily_habit':
+            print(f"Target: Complete it!")
+
+        completed = questionary.confirm(
+            f"Did you complete {name}?"
+        ).ask()
+
+        if completed:
+            print(f"Great Job!\n")
+            task['completed'] = True
+        else:
+            print(f"x skipped.\n")
+            task['completed'] = False
+            continue
+        
+        if task['completed'] == True:
+            if task_type == 'timed':
+                while True:
+                    reported = input(f" How long it take? (mins): ").strip()
+                    if reported.isdigit():
+                        task['reported_time'] = int(reported)
+                        break
+                    print("Please enter a valid number!")
+
+            elif task_type == 'reps':
+                while True:
+                    reported_reps = input(f" How many reps did you complete?: ").strip()
+                    reported_time  = input(f" How long did it take?: ").strip()
+
+                    if reported_reps.isdigit():
+                        task['reported_reps'] = int(reported_reps)
+                        task['reported_time'] = int(reported_time)
+                        break
+                    print("Please enter a valid number!")
+
+            elif task_type == 'flexible':
+                if task['target_type'] == 'time':
+                    while True:
+                        reported = input(f" How long it take? (mins): ").strip()
+                        if reported.isdigit():
+                            task['reported_time'] = int(reported)
+                            break
+                        print("Please enter a valid number!")
+
+                else:
+                    while True:
+                        reported = input(f" How much reps did you do? ({task['target_unit']}): ").strip()
+                        try:
+                            task['reported_amount'] = float(reported)
+                            task['reported_unit'] = task['target_unit']
+                            break
+                        except ValueError:
+                            print("Please enter a valid number!")
+
+            elif task_type == ' daily_habit':
+                task['reported_time'] = None
+
+            while True:
+                rating = input(" How difficult was it? (1-10): ").strip()
+                if rating.isdigit() and 1<=int(rating)<=10:
+                    task['user_rating'] = int(rating)
+                    break
+                print(" Please enter a number between 1 and 10 ")
+ 
 def main():
     tasks = load_tasks()
     task_names= [row['task_name'] for row in tasks]
@@ -123,18 +204,19 @@ def main():
                     f"Do you mean: {similar['task_name']}?"
                 ).ask()
                 if confirm:
+                    if selected_name in [t['task_name'] for t in selected_tasks]:
+                        print(f" Already added: {selected_name}\n")
+                        continue
                     selected_tasks.append(similar)
                     task = set_task_target(similar)
                     print(f" Added: {similar['task_name']}")
             else:
                 print("NO similar task found.")
 
-        
-
-        
-
         if not questionary.confirm("Add another?").ask():
             selected_tasks = show_summary_task(selected_tasks)
+            print("\n")
+            completion_flow(selected_tasks)
             break
 
 
